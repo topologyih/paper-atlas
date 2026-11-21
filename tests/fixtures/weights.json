@@ -1,0 +1,8 @@
+{
+  "direct": 0.3,
+  "coupling": 0.26,
+  "cocitation": 0.16,
+  "topic": 0.14,
+  "text": 0.1,
+  "related": 0.04
+}
