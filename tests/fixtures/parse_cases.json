@@ -1,0 +1,17 @@
+[
+  {"q": "10.48550/arXiv.1706.03762", "kind": "doi", "value": "10.48550/arxiv.1706.03762"},
+  {"q": "https://doi.org/10.48550/arXiv.1706.03762", "kind": "doi", "value": "10.48550/arxiv.1706.03762"},
+  {"q": "doi:10.1038/nature14539", "kind": "doi", "value": "10.1038/nature14539"},
+  {"q": "https://dx.doi.org/10.1145/3292500.3330919", "kind": "doi", "value": "10.1145/3292500.3330919"},
+  {"q": "arXiv:1706.03762v5", "kind": "arxiv", "value": "1706.03762"},
+  {"q": "https://arxiv.org/abs/1706.03762", "kind": "arxiv", "value": "1706.03762"},
+  {"q": "https://arxiv.org/pdf/1706.03762.pdf", "kind": "arxiv", "value": "1706.03762"},
+  {"q": "https://arxiv.org/pdf/1706.03762v3.pdf", "kind": "arxiv", "value": "1706.03762"},
+  {"q": "1706.03762", "kind": "arxiv", "value": "1706.03762"},
+  {"q": "https://openalex.org/W2626778328", "kind": "openalex", "value": "W2626778328"},
+  {"q": "W2626778328", "kind": "openalex", "value": "W2626778328"},
+  {"q": "Attention Is All You Need", "kind": "title", "value": "Attention Is All You Need"},
+  {"q": "https://aclanthology.org/N19-1423/", "kind": "url", "value": "https://aclanthology.org/N19-1423/"},
+  {"q": "https://www.semanticscholar.org/paper/Attention-Is-All-You-Need-Vaswani-Shazeer/204e3073870fae3d05bcbc2f6a8e263d9b72e776", "kind": "s2", "value": "204e3073870fae3d05bcbc2f6a8e263d9b72e776"},
+  {"q": "   ", "kind": "invalid", "value": ""}
+]
