@@ -4,7 +4,7 @@
 
 [![论文星图的引用网络和时间影响力视图](docs/media/cover.png)](docs/media/walkthrough.mp4)
 
-[查看 30 秒实拍（MP4）](docs/media/walkthrough.mp4) · [使用与配置](docs/guide.md) · [示例抓取报告](build_report.md)
+[下载 macOS 运行包](https://github.com/topologyih/paper-atlas/releases/latest) · [查看 30 秒实拍（MP4）](docs/media/walkthrough.mp4) · [使用与配置](docs/guide.md) · [示例抓取报告](docs/build_report.md)
 
 ## 本地运行
 
@@ -34,6 +34,7 @@ npm run dev
 | [src/](src/) | React 前端、图谱布局、筛选与导出 |
 | [server/](server/) | 可选 FastAPI 服务、数据查询与 PDF 解析 |
 | [scripts/](scripts/) | 抓取示例、读取缓存、启动本地桌面窗口 |
+| [macos/](macos/) | macOS 应用启动器 |
 | [public/sample.json](public/sample.json) | 浏览器直接加载的 OpenAlex 示例数据 |
 | [tests/](tests/) | JavaScript 和 Python 测试及共用样例 |
 

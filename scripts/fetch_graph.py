@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch a real citation neighborhood and write sample JSON plus build_report.md.
+"""Fetch a real citation neighborhood and write sample JSON plus docs/build_report.md.
 
 Example:
   python3 scripts/fetch_graph.py --query 10.48550/arXiv.1706.03762 --limit 120
@@ -25,7 +25,7 @@ def main() -> int:
     parser.add_argument("--query", required=True, help="DOI, arXiv, title, or paper URL")
     parser.add_argument("--limit", type=int, default=120)
     parser.add_argument("--out", default=str(ROOT / "public" / "sample.json"))
-    parser.add_argument("--report", default=str(ROOT / "build_report.md"))
+    parser.add_argument("--report", default=str(ROOT / "docs" / "build_report.md"))
     parser.add_argument("--cache", default=str(ROOT / "cache" / "openalex"))
     parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args()

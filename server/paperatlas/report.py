@@ -1,4 +1,4 @@
-"""Write build_report.md from a graph that was actually fetched."""
+"""Write the graph report from a graph that was actually fetched."""
 
 from __future__ import annotations
 

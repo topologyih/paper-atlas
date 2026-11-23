@@ -32,7 +32,7 @@
 | 年份 | 1971–2026（1 篇缺年份） |
 | 去重去掉 | 26 |
 
-种子被引 152270 次。一篇论文只记一种主要关系，优先级是种子、互引、参考文献、施引、相关、共引、同主题、文本相近。本次警告只有一条：部分论文的参考文献超过 200 条，Jaccard 用的是截断后的列表。字段缺失和更细的名单在[抓取报告](../build_report.md)，页面里的「数据说明」读的是同一份元数据。
+种子被引 152270 次。一篇论文只记一种主要关系，优先级是种子、互引、参考文献、施引、相关、共引、同主题、文本相近。本次警告只有一条：部分论文的参考文献超过 200 条，Jaccard 用的是截断后的列表。字段缺失和更细的名单在[抓取报告](build_report.md)，页面里的「数据说明」读的是同一份元数据。
 
 ## 如何计算相关度
 
@@ -78,11 +78,11 @@ npm run server
 python3 scripts/fetch_graph.py --query "10.48550/arXiv.1706.03762" --limit 120
 ```
 
-`npm run fetch` 使用同一条命令，默认更新 [public/sample.json](../public/sample.json) 和 [build_report.md](../build_report.md)。如需保留现有示例，可通过 `--out` 和 `--report` 指定新文件。`scripts/build_from_cache.py` 则从已有缓存生成较小的示例，覆盖当前文件需要显式指定 `--force`。
+`npm run fetch` 使用同一条命令，默认更新 [public/sample.json](../public/sample.json) 和 [docs/build_report.md](build_report.md)。如需保留现有示例，可通过 `--out` 和 `--report` 指定新文件。`scripts/build_from_cache.py` 则从已有缓存生成较小的示例，覆盖当前文件需要显式指定 `--force`。
 
 ## macOS 桌面窗口
 
-在项目根目录运行 `npm ci` 和 `npm run build`，然后双击 `论文星图.app`。启动器需要本机 Python 3，默认使用 Chrome 独立窗口，也可回退到默认浏览器。启动器在本机 47321 端口提供构建好的页面。修改前端代码后，重新构建并刷新窗口即可。
+在项目根目录运行 `npm ci` 和 `npm run build`，然后双击 `macos/论文星图.app`。启动器需要本机 Python 3，默认使用 Chrome 独立窗口，也可回退到默认浏览器。启动器在本机 47321 端口提供构建好的页面。修改前端代码后，重新构建并刷新窗口即可。
 
 ## 静态部署
 

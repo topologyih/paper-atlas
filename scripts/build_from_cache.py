@@ -2,7 +2,7 @@
 """Build a partial sample from OpenAlex responses already stored in cache/.
 
 This does not call the network. It keeps only the cached seed and citing
-papers, then overwrites public/sample.json and build_report.md. The checked-in
+papers, then overwrites public/sample.json and docs/build_report.md. The checked-in
 sample is a complete 120-paper fetch, so this script refuses to replace it
 unless --force is passed.
 """
@@ -46,7 +46,7 @@ def main() -> int:
     parser.add_argument(
         "--force",
         action="store_true",
-        help="覆盖 public/sample.json 和 build_report.md",
+        help="覆盖 public/sample.json 和 docs/build_report.md",
     )
     args = parser.parse_args()
     out = ROOT / "public" / "sample.json"
@@ -116,7 +116,7 @@ def main() -> int:
         print(seed_paper["title"], file=sys.stderr)
         return 1
     out.write_text(json.dumps(graph, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    report = ROOT / "build_report.md"
+    report = ROOT / "docs" / "build_report.md"
     report.write_text(render_report(graph), encoding="utf-8")
     print(
         f"写出 {out} ，{graph['meta']['paper_count']} 篇，去重 {graph['meta']['deduped']} ，"
