@@ -27,6 +27,22 @@ npm run dev
 
 要换一篇种子论文，可以输入 DOI、arXiv 编号、标题、论文链接，或上传 PDF，再联网生成图谱。图谱的覆盖范围和引用数取决于数据源及抓取时间。
 
+## 申请和配置 OpenAlex API 密钥
+
+浏览内置示例可以跳过这一步。经常生成新图谱或扩展论文时，可以申请免费的 OpenAlex API 密钥，使用自己的查询额度。[OpenAlex API 官方说明](https://help.openalex.org/api/authentication/)
+
+1. 用自己的邮箱注册 OpenAlex 账号，打开 OpenAlex 发来的邮件完成验证。已有账号可以直接登录。[注册 OpenAlex](https://openalex.org/signup)
+2. 登录后打开 **Settings → API key**，复制个人密钥。[打开密钥设置](https://openalex.org/settings/api)
+3. 完成上面的源码安装后，在与 `package.json` 同级的目录新建或编辑 `.env.local`，加入下面一行，把占位文字换成自己的密钥。
+
+   ```dotenv
+   VITE_OPENALEX_API_KEY=在这里粘贴自己的密钥
+   ```
+
+4. 如果 `npm run dev` 已在运行，按 `Ctrl+C` 停止后重新启动。打开终端显示的本机地址，在输入框里填一个 DOI，再点 **生成图谱**。可以用 `10.48550/arXiv.1706.03762` 试一次。
+
+`.env.local` 已被 Git 忽略。上述配置用于从源码在本机运行，GitHub Release 下载包里的页面已提前构建。公开构建前端时请将 `VITE_OPENALEX_API_KEY` 留空，因为 Vite 会把它写进浏览器可下载的 JavaScript。也可以在本地 Python 服务中使用 `OPENALEX_API_KEY`。[本地 API 与密钥](docs/guide.md#本地-api-与密钥)
+
 ## 项目结构
 
 | 位置 | 内容 |
